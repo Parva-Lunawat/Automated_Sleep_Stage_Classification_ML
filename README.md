@@ -105,6 +105,27 @@ The best models were then used in **ensemble learning** for improved performance
   - **Classification Report**: Provides precision, recall, and F1-score.  
   - **AUC-ROC Curve**: Assesses model performance across different classification thresholds.
  
+## Model Comparison & Selection  
+
+This project explores multiple machine learning models for **sleep stage classification**, comparing their strengths and limitations to determine the most effective approach.  
+
+| **Model**          | **Strengths** | **Limitations** |
+|--------------------|---------------------------------|-----------------------------|
+| **Decision Tree** | Simple, interpretable, handles non-linearity | Prone to overfitting |
+| **SVM (RBF Kernel)** | Effective for high-dimensional EEG data | Computationally expensive |
+| **Random Forest** | Reduces overfitting, handles imbalanced data well | Slower training for large datasets |
+| **XGBoost** | High accuracy, prevents overfitting via regularization | Requires careful tuning |
+
+### Final Model Selection: Ensemble Learning  
+To improve robustness, an **ensemble learning approach** was chosen:  
+
+- **Soft Voting Classifier (SVM + Random Forest + XGBoost)**: Averages class probabilities for better decision-making.  
+- **Bagging**: Reduces variance and prevents overfitting.  
+- **Boosting**: Corrects errors by focusing on misclassified instances.  
+
+The **Soft Voting Ensemble (SVM, RF, XGBoost)** provided the best performance in terms of **accuracy, precision, recall, and AUC-ROC**, making it the final model for sleep stage classification.
+
+ 
 ## Conclusion
 - **SVM and XGBoost performed best individually**, capturing complex EEG patterns.  
 - **Ensemble models outperformed single models**, especially with **soft voting**.  
