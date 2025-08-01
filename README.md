@@ -1,5 +1,8 @@
 # **Automated Sleep Stage Classification Using Machine Learning**
 
+## **NoteBook Link**
+**Colab Notebook: ** *([NoteBook]([https://physionet.org/content/sleep-edfx/1.0.0/](https://github.com/Parva-Lunawat/Automated_Sleep_Stage_Classification_ML/blob/main/Colab_Notebook/Automated_Sleep_Stage_Classification_1.ipynb)))*
+
 ## **Setup Details**
 
 ### **Software and Environment**
